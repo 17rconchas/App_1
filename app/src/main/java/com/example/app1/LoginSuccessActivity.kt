@@ -30,30 +30,14 @@ class LoginSuccessActivity : AppCompatActivity() {
         //outState.putString("FirstName", strFirstName)
         outState.putString("MiddleName", strMiddleName)
         outState.putString("LastName", strLastName)
-    /*    super.onSaveInstanceState(outState)
-        outState.putString("Name", mEtName!!.text.toString())
-        outState.putString("age", mTvAgeUnit!!.text.toString())
-        outState.putString("weight", mTvWeightUnit!!.text.toString())
-        outState.putString("height", mTvHeightUnit!!.text.toString())
-        outState.putString("imagePath", mProfilePicPath)*/
+
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        //strFirstName = savedInstanceState.getString("FirstName")
+        strFirstName = savedInstanceState.getString("FirstName")
         strMiddleName = savedInstanceState.getString("MiddleName")
         strLastName = savedInstanceState.getString("LastName")
-        /* super.onRestoreInstanceState(savedInstanceState)
-         mEtName!!.setText(savedInstanceState.getString("Name"))
-         mTvAgeUnit!!.text = savedInstanceState.getString("age")
-         mTvWeightUnit!!.text = (savedInstanceState.getString("weight"))
-         mTvHeightUnit!!.text = (savedInstanceState.getString("height"))
-         mProfilePicPath = savedInstanceState.getString("imagePath")
-         mIvPic = findViewById<View>(R.id.iv_pic) as ImageView
 
-         if (mProfilePicPath != null) {
-             mThumbnailImage = BitmapFactory.decodeFile(mProfilePicPath)
-             mIvPic!!.setImageBitmap(mThumbnailImage)
-         }*/
     }
 }
