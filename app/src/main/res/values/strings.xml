@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App 1</string>
+    <string name="name">First Name:</string>
+    <string name="submit">Submit</string>
+    <string name="middlename">Middle:</string>
+    <string name="lastname">Last:</string>
+    <string name="take_a_picture">Take Photo</string>
+    <string name="profile_pic">Profile Picture: </string>
+</resources>
